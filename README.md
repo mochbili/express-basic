@@ -16,7 +16,7 @@ git checkout master
 **To begin with progress up until a certain video, for example "S2V2":**
 ```
 # from this repo
-git checkout S2V2fdf
+git checkout S2V2
 ```
 These instructions are outlined in individual videos. 
 
