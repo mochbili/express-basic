@@ -30,6 +30,14 @@ app.get('/blog/:title?', (req, res) => {
 	}
 });
 
+app.get('/posts', (req, res) => {
+	if (req.query.raw) {
+		res.json(posts);
+	} else {
+		res.json(postList);
+	}
+})
+
 app.listen(port, () => {
 	console.log(`Example app listening at http://localhost:${port}`)
 });
