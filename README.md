@@ -56,3 +56,7 @@ nodemon --debug src
 # or `debugger` statement is reached in the JavaScript
 node-inspector
 ```
+
+# command
+node --inspect app.js
+nodemon app.js
