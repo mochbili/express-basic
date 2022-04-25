@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mochbili/treehouse-express-basics/issues"
   },
-  "homepage": "https://github.com/mochbili/treehouse-express-basics#readme"
+  "homepage": "https://github.com/mochbili/treehouse-express-basics#readme",
+  "dependencies": {
+    "jade": "^1.11.0"
+  }
 }
