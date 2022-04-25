@@ -1,11 +1,9 @@
 extends ./layout.jade
-block content
 
-	.error-message
-	| #{post.error}
+block content
 	section.post
 		.container.text-right
-			a(href="").text-faded view all
+			a(href="/blog").text-faded view all
 			.row
 				.col-lg-8.col-lg-offset-2.text-center
 					h2.section-heading #{post.title}
