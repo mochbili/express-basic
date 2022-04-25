@@ -19,8 +19,12 @@ app.get('/blog/:title?', (req, res) => {
     res.status(503);
     res.send('this page is under construction');
   } else {
-    const post = posts[title];
-    res.send(post);
+    // if (title === posts[title]) {
+      const post = posts[title] || {};
+      res.render('post', {post: post});
+    // } else {
+    //   res.render('post', {error: 'error blog not found'});
+    // }
   }
 });
 
