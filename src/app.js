@@ -9,8 +9,10 @@ app.get('/', (req, res) => {
   res.send('<h1>Hello World!</h1>');
 });
 
-app.get('/blog', (req, res) => {
-  res.send(posts);
+app.get('/blog/:title', (req, res) => {
+  const title = req.params.title;
+  const post = posts[title];
+  res.send(post);
 });
 
 app.listen(port, () => {

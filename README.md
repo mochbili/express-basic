@@ -57,6 +57,6 @@ nodemon --debug src
 node-inspector
 ```
 
-# command
+# Command
 node --inspect app.js
 nodemon app.js
