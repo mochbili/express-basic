@@ -5,8 +5,11 @@ const app = express();
 const port = 3000;
 const posts = require('./mock/posts.json');
 
+app.set('view engine', 'jade');
+app.set('views', __dirname + '/views');
+
 app.get('/', (req, res) => {
-  res.send('<h1>Hello World!</h1>');
+  res.render('index');
 });
 
 app.get('/blog/:title?', (req, res) => {
