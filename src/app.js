@@ -5,6 +5,8 @@ const app = express();
 const port = 3000;
 const posts = require('./mock/posts.json');
 
+app.use('/static', express.static(__dirname + '/public'));
+
 app.set('view engine', 'jade');
 app.set('views', __dirname + '/views');
 
